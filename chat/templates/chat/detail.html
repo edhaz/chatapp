@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ chatter.name }}</h1>
+<ul>
+{% for message in chatter.message_set.all %}
+    <li>{{ message.posted }} - <strong>{{ message.message }}</strong></li>
+{% endfor %}
+</ul>
+</body>
+</html>

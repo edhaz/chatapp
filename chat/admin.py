@@ -1,3 +1,7 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Chatter, Message
+
+admin.site.register(Chatter)
+admin.site.register(Message)
+
